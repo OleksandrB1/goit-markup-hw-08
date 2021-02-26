@@ -1,6 +1,16 @@
+:root {
+  --secondary-font: "Raleway", sans-serif;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --element-background-color: #2f303a;
+  --element-text-color: #ffffff;
+  --button-color: #ffffff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -13,32 +23,31 @@ body {
   font-style: normal;
 }
 
-/* --------------------- */
+/* -----Components---- */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   text-align: center;
 }
-
+.navigation-link.current {
+  color: var(--accent-color);
+}
 /* --------------------- */
 
 /* WebStudio лого*/
 .logo {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo > span {
   color: #000000;
 }
 .footer .logo > span {
-  color: #ffffff;
+  color: var(--element-text-color);
 }
 
 /* Header style */
@@ -50,47 +59,47 @@ body {
   text-align: left;
 }
 .navigation-link {
-  color: #212121;
+  color: inherit;
 }
 .contact-link {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .navigation-link:hover,
 .navigation-link:focus,
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--element-background-color);
+  letter-spacing: 0.06em;
 }
 .hero-title {
   text-transform: uppercase;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
+  color: var(--element-text-color);
 }
 .hero-button {
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
   border-radius: 4px;
   border-style: none;
   cursor: pointer;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
+  color: var(--button-color);
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #188ce8;
 }
 
@@ -100,16 +109,13 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-align: left;
 }
 .features-desc {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Section work*/
@@ -120,31 +126,26 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 .member-specialty {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--element-background-color);
 }
 .address {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-align: left;
 }
 .address-city {
-  color: #ffffff;
+  color: var(--element-text-color);
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
@@ -157,7 +158,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   text-align: center;
   background-color: #f5f4fa;
   border-style: none;
@@ -166,8 +166,8 @@ body {
 }
 .filters-button:hover,
 .filters-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--button-color);
 }
 
 /* Projects list */
@@ -181,9 +181,7 @@ body {
 }
 .projects {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
