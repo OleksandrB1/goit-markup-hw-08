@@ -551,6 +551,7 @@ img {
   font-size: 18px;
   line-height: 1.55;
   text-align: left;
+  opacity: 0;
   color: var(--element-color);
   background-color: var(--background-overlay);
   transform: translateY(100%);
