@@ -48,9 +48,10 @@
   </header>
     <main>
     <h1 class="visually-hidden">Портфолио студии</h1>
-        <!--Фильтр-->
+        <!--Портфолио-->
         <section class="portfolio">
           <div class="container section">
+            <!--Список фильтров-->
             <h2 class="visually-hidden">Cписок фильтров</h2> 
             <ul class="filters-list list">
                 <li class="filters-item">
@@ -69,10 +70,11 @@
                     <button class="filters-button" type="button">Маркетинг</button>
                 </li>
             </ul>
+            <!--Список проектов-->
             <h2 class="visually-hidden">Список проектов</h2>
             <ul class="projects-list list">
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-1.jpg" alt="Изображение веб-страницы на ноутбуке" height="294" width="370">
                     <p class="overlay-text">
@@ -86,7 +88,7 @@
                     </a>
                 </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-2.jpg" alt="Постер с двумя баскетболистами" height="294" width="370">
                     <p class="overlay-text">
@@ -100,7 +102,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-3.jpg" alt="Логотип ресторана" height="294" width="370">
                     <p class="overlay-text">
@@ -114,7 +116,7 @@
                   </a>
                 </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-4.jpg" alt="Наушники" height="294" width="370">
                     <p class="overlay-text">
@@ -128,7 +130,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-5.jpg" alt="Две коробки" height="294" width="370">
                     <p class="overlay-text">
@@ -142,7 +144,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-6.jpg" alt="Изображение веб-страницы на моноблоке" height="294" width="370">
                     <p class="overlay-text">
@@ -156,7 +158,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-7.jpg" alt="Открытая книга" height="294" width="370">
                     <p class="overlay-text">
@@ -170,7 +172,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-8.jpg" alt="Логотип проекта" height="294" width="370">
                     <p class="overlay-text">
@@ -184,7 +186,7 @@
                   </a>
                </li>
                 <li class="projects-item">
-                  <a class="link" href="">
+                  <a class="project-link link" href="">
                   <div class="overlay">
                     <img src="./images/portfolio/portfolio-9.jpg" alt="Робота за ноутбуком" height="294" width="370">
                     <p class="overlay-text">
@@ -250,6 +252,20 @@
             </li>
           </ul>
         </div>
+        <form action="#" class="subscription-form">
+          <label for="email-subscription">
+            <p class="footer-subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          </label>
+          <div class="subscription-conteiner">
+          <input type="email" name="email-subscription" id="email-subscription" class="input-subscription" required placeholder="E-mail" autocomplete="off">
+            <button type="submit" class="button-subscription">Подписаться
+              <svg class="subscription-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
     
       </div>
     </footer>
