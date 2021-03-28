@@ -683,17 +683,7 @@ img {
   pointer-events: none;
 }
 
-/*===================================
-==
-
-
-
-Модальне вікно
-
-
-
-==
-======================================*/
+/* Модальне вікно*/
 
 .model-title {
 display: block;
@@ -810,7 +800,7 @@ transform: translate(-50%);
 bottom: 40px;
   border-radius: 4px;
   border: 1px solid transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--botton-shadow);
   align-self: center;
   padding: 10px 55px;
   min-width: 200px;
