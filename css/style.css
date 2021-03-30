@@ -29,9 +29,6 @@
 
 }
 
-
-
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body-color);
@@ -476,10 +473,10 @@ img {
   line-height: 1.14;
   text-align: left;
   color: var(--element-color);
-  margin-bottom: 20px;
 }
 .subscription-conteiner {
   display: flex;
+  margin-top: 20px;
 }
 .input-subscription {
   font-size: 16px;
@@ -685,7 +682,7 @@ img {
 
 /* Модальне вікно*/
 
-.model-title {
+.modal-title {
 display: block;
 font-size: 20px;
 line-height: 1.15;
@@ -699,6 +696,8 @@ height: 40px;
 border: 1px solid var(--modal-border);
 border-radius: 4px;
 padding-left: 42px;
+outline: none; 
+transition: border 350ms var(--cubic);
 }
 .label-text {
 font-style: normal;
@@ -707,9 +706,6 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--secondary-text-color);
-outline: none; 
-
-
 
 }
 .input-icon {
@@ -719,6 +715,8 @@ left: 12px;
 width: 18px;
 height: 18px;
 fill: var(--body-color);
+transition: fill 350ms var(--cubic);
+
 }
 .input-container {
 position: relative;
@@ -734,7 +732,7 @@ border-color: var(--accent-color);
 fill: var(--accent-color);
 }
 
-.model-area {
+.modal-area {
 width: 100%;
 height: 120px;
 border: 1px solid var(--modal-border);
@@ -749,36 +747,35 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.01em;
 color: var(--modal-color);
+outline: none;
+transition: border 350ms var(--cubic);
 }
-.model-area:hover,
-.model-area:focus {
+.modal-area:hover,
+.modal-area:focus {
   border-color: var(--accent-color);
 }
-
-
 .form-checkbox {
   margin-bottom: 30px;
 }
-
-
 .modal-desk {
   display: flex;
   align-items: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .modal-desk::before {
   display: block;
   margin-right: 8px;
   content: "";
-  width: 16px;
+  width: 15px;
   height: 16px;
+  border: 1px solid var(--body-color);
   border-radius: 2px;
   cursor: pointer;
 }
-.modal-desk:checked:checked + .modal-desk::before {
+.modal-check:checked + .modal-desk::before {
   background-color: var(--accent-color);
   background-image: url(../images/vector.svg);
   background-size: contain;
@@ -786,11 +783,13 @@ color: var(--modal-color);
   background-position: center;
   border-color: transparent;
 }
-.modal-desk:focus + .modal-desk::before {
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
+
 .modal-link {
-  color: var(--accent-color);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: var(--accent-color);
 }
 
 .modal-button {
@@ -798,19 +797,23 @@ position: absolute;
 left: 50%;
 transform: translate(-50%);
 bottom: 40px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  box-shadow: 0px 4px 4px var(--botton-shadow);
-  align-self: center;
-  padding: 10px 55px;
-  min-width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  background: var(--accent-button-color);
-  color: var(--element-color);
-  cursor: pointer;
-  transition: color 250ms var(--cubic);
+border-radius: 4px;
+border: 1px solid transparent;
+box-shadow: 0px 4px 4px var(--botton-shadow);
+align-self: center;
+padding: 10px 55px;
+min-width: 200px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+background: var(--accent-color);
+color: var(--element-color);
+cursor: pointer;
+transition: background-color 350ms var(--cubic);
+}
+.modal-button:focus,
+.modal-button:hover {
+  background-color: var(--accent-button-color);
 }
