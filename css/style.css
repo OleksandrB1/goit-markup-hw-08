@@ -26,7 +26,6 @@
   --botton-shadow: rgba(0, 0, 0, 0.15);
   --modal-border: rgba(33, 33, 33, 0.2);
   --modal--color: rgba(117, 117, 117, 0.5);
-
 }
 
 body {
@@ -492,15 +491,14 @@ img {
   background-color: inherit;
   padding-left: 16px;
   margin-right: 12px;
-  outline: none; 
+  outline: none;
 }
 .input-subscription:focus {
   border-color: var(--accent-button-color);
 }
 .button-subscription:hover,
-.button-subscription:focus 
-{
-   background-color: var(--accent-button-color);
+.button-subscription:focus {
+  background-color: var(--accent-button-color);
 }
 
 .button-subscription {
@@ -521,9 +519,8 @@ img {
   text-align: center;
   cursor: pointer;
   color: var(--element-color);
-    transition: background-color 250ms var(--cubic);
   transition: background-color 250ms var(--cubic);
-
+  transition: background-color 250ms var(--cubic);
 }
 
 .subscription-icon {
@@ -683,72 +680,70 @@ img {
 /* Модальне вікно*/
 
 .modal-title {
-display: block;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-margin-bottom: 12px;
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
 }
 .input-modal {
-display: inline;
-width: 100%;
-height: 40px;
-border: 1px solid var(--modal-border);
-border-radius: 4px;
-padding-left: 42px;
-outline: none; 
-transition: border 350ms var(--cubic);
+  display: inline;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--modal-border);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  transition: border 350ms var(--cubic);
 }
 .label-text {
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--secondary-text-color);
-
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
 }
 .input-icon {
-position: absolute;
-top: 11px;
-left: 12px;
-width: 18px;
-height: 18px;
-fill: var(--body-color);
-transition: fill 350ms var(--cubic);
-
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--body-color);
+  transition: fill 350ms var(--cubic);
 }
 .input-container {
-position: relative;
-margin-top: 4px;
-margin-bottom: 10px;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .input-modal:hover,
 .input-modal:focus,
-.input-modal:hover +.input-icon,
-.input-modal:focus +.input-icon {
-border-color: var(--accent-color);
-fill: var(--accent-color);
+.input-modal:hover + .input-icon,
+.input-modal:focus + .input-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-area {
-width: 100%;
-height: 120px;
-border: 1px solid var(--modal-border);
-border-radius: 4px;
-resize: none;
-margin-top: 4px;
-margin-bottom: 20px;
-padding: 12px 16px;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.01em;
-color: var(--modal-color);
-outline: none;
-transition: border 350ms var(--cubic);
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--modal-border);
+  border-radius: 4px;
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--modal-color);
+  outline: none;
+  transition: border 350ms var(--cubic);
 }
 .modal-area:hover,
 .modal-area:focus {
@@ -785,33 +780,33 @@ transition: border 350ms var(--cubic);
 }
 
 .modal-link {
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: var(--accent-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--accent-color);
 }
 
 .modal-button {
-position: absolute;
-left: 50%;
-transform: translate(-50%);
-bottom: 40px;
-border-radius: 4px;
-border: 1px solid transparent;
-box-shadow: 0px 4px 4px var(--botton-shadow);
-align-self: center;
-padding: 10px 55px;
-min-width: 200px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-text-align: center;
-letter-spacing: 0.06em;
-background: var(--accent-color);
-color: var(--element-color);
-cursor: pointer;
-transition: background-color 350ms var(--cubic);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 40px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px var(--botton-shadow);
+  align-self: center;
+  padding: 10px 55px;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  color: var(--element-color);
+  cursor: pointer;
+  transition: background-color 350ms var(--cubic);
 }
 .modal-button:focus,
 .modal-button:hover {
