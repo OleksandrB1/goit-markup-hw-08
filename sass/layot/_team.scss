@@ -1,0 +1,37 @@
+.team {
+  background-color: $secondary-bgColor;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @extend %marginCard;
+  &__item {
+    background: $elementColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: $backing;
+    margin-top: $backing;
+
+    @extend %marginCard;
+  }
+  &__member {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__text {
+    padding: 30px 32px;
+  }
+  &__specialty {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: $secondaryColor;
+    margin-bottom: 16px;
+  }
+}

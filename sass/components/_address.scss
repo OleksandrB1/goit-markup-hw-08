@@ -1,0 +1,17 @@
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    color: $addressColor;
+  }
+}
+.address-city {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 20px;
+  margin-right: 70px;
+  color: $elementColor;
+  margin-bottom: 9px;
+}

@@ -1,0 +1,7 @@
+%marginCard {
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+%flexCard {
+  flex-basis: calc(100% / 4 - 30px);
+}

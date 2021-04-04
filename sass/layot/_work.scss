@@ -1,0 +1,26 @@
+.work-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @extend %marginCard;
+  &__item {
+    margin-left: $backing;
+    margin-top: $backing;
+  }
+  &__thumb {
+    position: relative;
+  }
+  &__text {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 27px 0;
+    background-color: $thumbbg;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $elementColor;
+  }
+}

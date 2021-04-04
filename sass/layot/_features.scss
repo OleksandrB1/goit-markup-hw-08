@@ -1,0 +1,30 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @extend %marginCard;
+}
+.features-list__item {
+  margin-left: $backing;
+  margin-top: $backing;
+  @extend %flexCard;
+}
+.features-list__desc {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: $secondaryColor;
+}
+.features-list__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: $secondary-bgColor;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
