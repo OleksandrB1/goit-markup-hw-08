@@ -214,6 +214,7 @@ img {
   width: 100vw;
   max-width: 480px;
   height: 100vh;
+  z-index: 20;
   background-color: #ffffff;
   padding: 48px 40px;
   opacity: 0;
