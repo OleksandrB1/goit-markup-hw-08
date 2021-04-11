@@ -1,7 +1,15 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  & .section {
-    padding-top: 0;
+  padding: 30px 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
   }
 }

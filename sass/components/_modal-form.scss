@@ -1,108 +1,118 @@
 .modal-form {
-&__input {
-  display: inline;
-  width: 100%;
-  height: 40px;
-  border: 1px solid $modalBorder;
-  border-radius: 4px;
-  padding-left: 42px;
-  outline: none;
-  transition: border 350ms $cubic;
-  &:hover,
-&:focus  {
-  border-color: $accentColor;
-}
+  &__input {
+    display: inline;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $modalBorder;
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    transition: border 350ms $cubic;
+    &:hover,
+    &:focus {
+      border-color: $accentColor;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $secondaryColor;
+  }
+  &__icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: $bodyСolor;
+    transition: fill 350ms $cubic;
+    .modal-form__input:hover + &,
+    .modal-form__input:focus + & {
+      fill: $accentColor;
+    }
+  }
+  &__container {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
 
-}
-&__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $secondaryColor;
-}
-&__icon {
-  position: absolute;
-  top: 11px;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  fill: $bodyСolor;
-  transition: fill 350ms $cubic;
-  .modal-form__input:hover + &,
-.modal-form__input:focus + & {
-  fill: $accentColor;
-}
-}
-&__container {
-  position: relative;
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
+  &__area {
+    width: 100%;
+    height: 120px;
+    border: 1px solid $modalBorder;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $modalColor;
+    outline: none;
+    transition: border 350ms $cubic;
+    &:hover,
+    &:focus {
+      border-color: $accentColor;
+    }
+  }
 
+  &__checkbox {
+    margin-bottom: 30px;
+  }
+  &__desk {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+    &::before {
+      display: block;
+      margin-right: 8px;
+      content: "";
+      width: 15px;
+      height: 16px;
+      border: 1px solid $bodyСolor;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .modal-check:checked + &::before {
+      background-color: $accentColor;
+      background-image: url(../images/vector.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: transparent;
+    }
+  }
 
-
-&__area {
-  width: 100%;
-  height: 120px;
-  border: 1px solid $modalBorder;
-  border-radius: 4px;
-  resize: none;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: $modalColor;
-  outline: none;
-  transition: border 350ms $cubic;
-  &:hover,
-&:focus {
-  border-color: $accentColor;
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $accentColor;
+  }
 }
-}
-
-&__checkbox {
-  margin-bottom: 30px;
-}
-&__desk {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: $secondaryColor;
-  &::before {
-  display: block;
-  margin-right: 8px;
-  content: "";
-  width: 15px;
-  height: 16px;
-  border: 1px solid $bodyСolor;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.modal-check:checked + &::before {
-  background-color: $accentColor;
-  background-image: url(../images/vector.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: transparent;
-}
-}
-
-
-
-&__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $accentColor;
-}
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    &__desk {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
 }

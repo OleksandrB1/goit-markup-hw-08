@@ -8,31 +8,28 @@
   color: $elementColor;
 }
 .subscription {
-  display: flex;
   margin-top: 20px;
   &__input {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     text-align: left;
-    width: 358px;
+    padding-left: 16px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     border-radius: 4px;
     color: $elementColor;
     border: 1px solid $modalInput;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: inherit;
-    padding-left: 16px;
-    margin-right: 12px;
     outline: none;
+    margin-bottom: 20px;
     &:focus {
       border-color: $accentbuttonСolor;
     }
   }
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     height: 50px;
     border-style: none;
@@ -47,7 +44,7 @@
     text-align: center;
     cursor: pointer;
     color: $elementColor;
-    transition: background-color 250ms $cubic;
+    fill: $elementColor;
     transition: background-color 250ms $cubic;
     &:hover,
     &:focus {
@@ -59,5 +56,35 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    &__input {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    display: flex;
+    margin-top: 20px;
+    &__input {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      text-align: left;
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+    }
   }
 }

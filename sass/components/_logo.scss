@@ -1,14 +1,45 @@
 .logo {
   font-family: $secondaryFont;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: bold;
   color: $accentColor;
-  margin-right: 93px;
   & > span {
     color: $logoColor;
   }
   .footer & > span {
     color: $elementColor;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+
+    font-family: $secondaryFont;
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: bold;
+    color: $accentColor;
+    margin-right: 88px;
+    .footer & {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+
+    font-family: $secondaryFont;
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: bold;
+    color: $accentColor;
+    margin-right: 93px;
   }
 }

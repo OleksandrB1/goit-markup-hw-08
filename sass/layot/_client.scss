@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  padding-bottom: 60px;
+  &__item {
+    margin: 15px;
   }
   &__link {
     display: flex;
@@ -19,6 +20,17 @@
     &:focus {
       fill: $accentColor;
       border-color: $accentColor;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    &__item {
+      margin: 0;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }

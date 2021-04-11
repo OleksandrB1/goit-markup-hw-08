@@ -6,12 +6,33 @@
     color: $addressColor;
   }
 }
+.address-list {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
 .address-city {
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
-  margin-top: 20px;
-  margin-right: 70px;
+  text-align: center;
   color: $elementColor;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+    &__link {
+      color: $addressColor;
+    }
+  }
+  .address-city {
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 70px;
+  }
+  .address-list {
+    margin: 0;
+  }
 }

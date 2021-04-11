@@ -1,26 +1,38 @@
-.work-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  @extend %marginCard;
-  &__item {
-    margin-left: $backing;
-    margin-top: $backing;
-  }
-  &__thumb {
-    position: relative;
-  }
-  &__text {
+.work {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
     display: block;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 27px 0;
-    background-color: $thumbbg;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: $elementColor;
+  }
+  .work-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    &__item {
+      margin-left: $backing;
+      margin-top: $backing;
+    }
+    &__thumb {
+      position: relative;
+    }
+    &__text {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      padding: 27px 0;
+      background-color: $thumbbg;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: $elementColor;
+    }
   }
 }
