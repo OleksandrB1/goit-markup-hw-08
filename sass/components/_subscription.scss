@@ -30,6 +30,12 @@
     }
   }
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
     width: 200px;
     height: 50px;
     border-style: none;
