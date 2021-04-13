@@ -1,5 +1,8 @@
 .menu-mobile {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 50%;
   width: 100vw;
@@ -30,9 +33,6 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
-  &:last-child {
-    margin-bottom: 302px;
-  }
   &:hover,
   &:focus {
     color: $accentColor;
@@ -41,6 +41,7 @@
     color: $accentColor;
   }
 }
+
 .mobile-list__item {
   padding-left: 0px;
   font-size: 24px;
@@ -51,14 +52,11 @@
   color: $secondaryColor;
   &:not(:last-child) {
     padding-bottom: 32px;
+    color: $accentColor;
+    font-size: 34px;
   }
   &:last-child {
     padding-bottom: 64px;
-  }
-  &:hover,
-  &:focus {
-    color: $accentColor;
-    font-size: 34px;
   }
 }
 .mobile-social__link {
@@ -68,7 +66,6 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accentColor;
-  margin-bottom: 48px;
 
   &:not(:last-child)::after {
     content: "";

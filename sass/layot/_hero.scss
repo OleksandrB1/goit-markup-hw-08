@@ -5,16 +5,10 @@
   background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
     url(../images/hero/mobile/header.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin: auto;
-  max-width: 480px;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
-        url(../images/hero/mobile/header@2x.jpg);
-    }
-  }
+  max-width: 100%;
 
   &__title {
     font-weight: 900;
@@ -47,6 +41,14 @@
     }
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
+      url(../images/hero/mobile/header@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     &__title {
@@ -64,17 +66,14 @@
       url(../images/hero/tablet/header.jpg);
     background-repeat: no-repeat;
     margin: auto;
-    max-width: 768px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero {
-        background-image: linear-gradient(
-            $hero-gradientLeft,
-            $hero-gradientRight
-          ),
-          url(../images/hero/tablet/header@2x.jpg);
-      }
+    max-width: 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
+        url(../images/hero/tablet/header@2x.jpg);
     }
   }
 }
@@ -86,20 +85,9 @@
     background-repeat: no-repeat;
     background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
       url(../images/hero/desktop/header.jpg);
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin: auto;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero {
-        background-image: linear-gradient(
-            $hero-gradientLeft,
-            $hero-gradientRight
-          ),
-          url(../images/hero/desktop/header@2x.jpg);
-      }
-    }
     &__title {
       width: 696px;
       text-transform: uppercase;
@@ -130,6 +118,14 @@
       &:focus {
         background-color: $accentbuttonСolor;
       }
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient($hero-gradientLeft, $hero-gradientRight),
+        url(../images/hero/desktop/header@2x.jpg);
     }
   }
 }
